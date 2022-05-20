@@ -1,0 +1,9 @@
+.nav {
+    background-color: black;
+    padding: 0.5rem;
+    height: 60px;
+}
+
+.nav p {
+    font-size: 1rem;
+}

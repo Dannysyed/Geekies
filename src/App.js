@@ -9,7 +9,6 @@ function App() {
 
       <Homepage></Homepage>
       <h1>Geekies</h1>
-
     </div>
   );
 }

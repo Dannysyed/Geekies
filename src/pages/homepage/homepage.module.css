@@ -1,3 +1,10 @@
 .home {
-    color: red;
+    /* color: red; */
+    height: 66rem;
+    width: 153rem;
+    font-size: 3rem;
+    /* width: 1000px; */
+    background: #108dc7;
+    background: -webkit-linear-gradient(to right, #ef8e38, #108dc7);
+    background: linear-gradient(to right, #ef8e38, #108dc7);
 }

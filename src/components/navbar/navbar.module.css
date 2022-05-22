@@ -7,6 +7,7 @@
     background: white;
 
 
+
 }
 
 .nav p {
@@ -16,6 +17,7 @@
 .name {
     font-size: 2rem;
     display: flex;
+
 }
 
 .name img {
@@ -23,11 +25,17 @@
     height: 5rem;
 }
 
+.name a {
+    text-decoration: none;
+    color: black;
+}
+
 .link {
     font-size: 2rem;
 
     display: flex;
     margin-top: 1rem;
+
 }
 
 .link a {

@@ -5,7 +5,9 @@ let Navbar = () => {
     return (
         <div className={styles.nav}>
             <div className={styles.name}>
-                <h1>Geekies</h1>
+                <NavLink to={'/homepage'}>
+                    <h1>Geekies</h1>
+                </NavLink>
                 <img src={leave}></img>
             </div>
             <div className={styles.link}>

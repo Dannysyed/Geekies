@@ -13,7 +13,7 @@ let Navbar = () => {
             <div className={styles.link}>
                 <NavLink to={'/technology'}>Technology</NavLink>
                 <NavLink to={'/Anime'}>Anime</NavLink>
-                <NavLink to={'/Bollywood'}>Bollywood</NavLink>
+                <NavLink to={'/Games'}>Games</NavLink>
             </div>
         </div>
     )

@@ -1,9 +1,40 @@
 .nav {
-    background-color: black;
+    /* background-color: black; */
     padding: 0.5rem;
+    display: flex;
+    justify-content: space-around;
+    /* border: solid; */
+    background: white;
+
 
 }
 
 .nav p {
     font-size: 1rem;
+}
+
+.name {
+    font-size: 2rem;
+    display: flex;
+}
+
+.name img {
+    width: 9rem;
+    height: 5rem;
+}
+
+.link {
+    font-size: 2rem;
+
+    display: flex;
+    margin-top: 1rem;
+}
+
+.link a {
+    text-decoration: none;
+    color: black;
+    margin-right: 1rem;
+
+    /* background-color: red; */
+
 }

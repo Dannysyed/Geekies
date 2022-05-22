@@ -1,0 +1,87 @@
+.heroContainer{
+    margin: 0rem auto;
+    width: 100%;
+    height: 550px;
+    background-image: url("../../assets/heroPage/zenitsu.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    /* cursor: pointer; */
+}
+.mainHeading{
+    font-family: 'Lobster Two', cursive;
+    width: fit-content;
+    color: #FFFF4E;
+    text-shadow: -2px -2px 1px black;
+    font-size: 7rem;
+    font-weight: 800;
+    position: relative;
+    top: 20rem;
+    left: 2rem;
+}
+.subHeading{
+    font-family: 'Lobster Two', cursive;
+    width: 600px;
+    padding: 0.5rem 1rem;
+    color: black;
+    font-size: 3rem;
+    background-color: #ffffff;
+    text-decoration: underline;
+    position: relative;
+    top: 20rem;
+    left: 2rem;
+}
+
+@media all and (max-width: 720px){
+    html{
+        font-size: 8px;
+    }
+    .heroContainer{
+        background-size: 100% auto;
+        height: 360px;
+    }
+    .mainHeading{
+        top: 26rem;
+        left: 2rem;
+        color: #000000;
+        text-shadow: none;
+        background-color: white;
+        padding: 0rem 0.5rem;
+        font-size: 4rem;
+    }
+    .subHeading{
+        width: 90%;
+        padding: 0.5rem 1rem;
+        color: rgb(255, 255, 255);
+        background-color: #000000;
+        top: 26rem;
+        left: 2rem;
+    }
+}
+
+@media all and (max-width: 480px){
+    html{
+        font-size: 5px;
+    }
+    .heroContainer{
+        background-size: 100% auto;
+        height: 330px;
+    }
+    .mainHeading{
+        top: 45rem;
+        left: 2rem;
+        color: #000000;
+        text-shadow: none;
+        background-color: white;
+        padding: 0rem 0.5rem;
+        font-size: 5rem;
+    }
+    .subHeading{
+        width: 90%;
+        padding: 0.5rem 1rem;
+        color: rgb(255, 255, 255);
+        background-color: #000000;
+        top: 45rem;
+        left: 2rem;
+        font-size: 3.2rem;
+    }
+}

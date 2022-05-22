@@ -1,9 +1,14 @@
-import styles from './homepage.module.css'
+import HeroSection from "../../components/heroSection/HeroSection";
+import styles from "./homepage.module.css";
+
 let Homepage = () => {
-    return (
-        <div className={styles.home}>
-            <h1>This is homepage</h1>
-        </div>
-    )
-}
-export default Homepage
+  return (
+    <div className={styles.home}>
+      <HeroSection
+        heading="Demon Slayer Season 3"
+        subHeading="When Demon Slayer season 3 comes out, based on everything we know"
+      />
+    </div>
+  );
+};
+export default Homepage;

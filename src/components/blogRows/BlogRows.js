@@ -12,7 +12,7 @@ function BlogRows() {
     <div className={styles.container}>
       <h2 className={styles.heading}>Top Trending</h2>
       <div className={styles.blogsContainer}>
-        {[1, 2, 3, 4, 5, 6].map((item) => (
+        {[1, 2, 3, 4, 5, 6, 7, 8].map((item) => (
           <Card
             className={styles.blogCard}
             sx={{ maxWidth: 345 }}

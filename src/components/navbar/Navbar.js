@@ -1,6 +1,6 @@
 import styles from "./navbar.module.css";
 import { NavLink } from "react-router-dom";
-import leave from "../../assets/leave.png";
+import leave from "../../Assets/Lightning.png";
 
 let Navbar = () => {
   return (
@@ -9,7 +9,7 @@ let Navbar = () => {
         <NavLink to={"/homepage"}>
           <h1>Geekies</h1>
         </NavLink>
-        <img src={leave}></img>
+        {/* <img src={leave}></img> */}
       </div>
       <div className={styles.link}>
         <NavLink to={"/technology"}>Technology</NavLink>

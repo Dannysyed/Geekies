@@ -1,6 +1,7 @@
 import HeroSection from "../../components/heroSection/HeroSection";
 import styles from "./homepage.module.css";
 import myImage from "../../assets/heroPage/zenitsu.jpg";
+import BlogRows from "../../components/blogRows/BlogRows";
 
 let Homepage = () => {
   return (
@@ -10,6 +11,7 @@ let Homepage = () => {
         heading="Demon Slayer Season 3"
         subHeading="When Demon Slayer season 3 comes out, based on everything we know"
       />
+      <BlogRows />
     </div>
   );
 };

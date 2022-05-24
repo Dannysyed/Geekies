@@ -1,16 +1,24 @@
-.heroContainer{
+.heroContainer {
     margin: 0rem auto;
     width: 100%;
     height: 550px;
 }
-.heroContainer  img{
+
+.heroContainer img {
     width: 100%;
     max-width: 1500px;
     height: 550px;
     object-fit: cover;
     position: absolute;
 }
-.mainHeading{
+
+.imgcarousel {
+    position: absolute;
+
+
+}
+
+.mainHeading {
     position: relative;
     font-family: 'Lobster Two', cursive;
     width: fit-content;
@@ -19,10 +27,11 @@
     font-size: 7rem;
     font-weight: 800;
     position: relative;
-    top: 20rem;
+    top: 2rem;
     left: 2rem;
 }
-.subHeading{
+
+.subHeading {
     font-family: 'Lobster Two', cursive;
     width: 600px;
     padding: 0.5rem 1rem;
@@ -31,21 +40,26 @@
     background-color: #ffffff;
     text-decoration: underline;
     position: relative;
-    top: 20rem;
+    top: 2rem;
     left: 2rem;
 }
 
-@media all and (max-width: 720px){
-    html{
+
+
+@media all and (max-width: 720px) {
+    html {
         font-size: 8px;
     }
-    .heroContainer{
+
+    .heroContainer {
         height: 520px;
     }
-    .heroContainer  img{
+
+    .heroContainer img {
         height: 520px;
     }
-    .mainHeading{
+
+    .mainHeading {
         top: 26rem;
         left: 2rem;
         color: #000000;
@@ -54,7 +68,8 @@
         padding: 0rem 0.5rem;
         font-size: 4rem;
     }
-    .subHeading{
+
+    .subHeading {
         width: 90%;
         padding: 0.5rem 1rem;
         color: rgb(255, 255, 255);
@@ -64,17 +79,20 @@
     }
 }
 
-@media all and (max-width: 480px){
-    html{
+@media all and (max-width: 480px) {
+    html {
         font-size: 5px;
     }
-    .heroContainer{
+
+    .heroContainer {
         height: 480px;
     }
-    .heroContainer  img{
+
+    .heroContainer img {
         height: 480px;
     }
-    .mainHeading{
+
+    .mainHeading {
         top: 45rem;
         left: 2rem;
         color: #000000;
@@ -83,7 +101,8 @@
         padding: 0rem 0.5rem;
         font-size: 5rem;
     }
-    .subHeading{
+
+    .subHeading {
         width: 90%;
         padding: 0.5rem 1rem;
         color: rgb(255, 255, 255);

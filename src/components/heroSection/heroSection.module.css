@@ -2,12 +2,16 @@
     margin: 0rem auto;
     width: 100%;
     height: 550px;
-    background-image: url("../../assets/heroPage/zenitsu.jpg");
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-    /* cursor: pointer; */
+}
+.heroContainer  img{
+    width: 100%;
+    max-width: 1500px;
+    height: 550px;
+    object-fit: cover;
+    position: absolute;
 }
 .mainHeading{
+    position: relative;
     font-family: 'Lobster Two', cursive;
     width: fit-content;
     color: #FFFF4E;
@@ -36,8 +40,10 @@
         font-size: 8px;
     }
     .heroContainer{
-        background-size: 100% auto;
-        height: 360px;
+        height: 520px;
+    }
+    .heroContainer  img{
+        height: 520px;
     }
     .mainHeading{
         top: 26rem;
@@ -63,8 +69,10 @@
         font-size: 5px;
     }
     .heroContainer{
-        background-size: 100% auto;
-        height: 330px;
+        height: 480px;
+    }
+    .heroContainer  img{
+        height: 480px;
     }
     .mainHeading{
         top: 45rem;
@@ -82,6 +90,6 @@
         background-color: #000000;
         top: 45rem;
         left: 2rem;
-        font-size: 3.2rem;
+        font-size: 3.5rem;
     }
 }

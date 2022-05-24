@@ -5,6 +5,7 @@
 }
 .heroContainer  img{
     width: 100%;
+    max-width: 1500px;
     height: 550px;
     object-fit: cover;
     position: absolute;

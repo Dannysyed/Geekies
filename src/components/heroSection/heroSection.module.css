@@ -1,47 +1,25 @@
-.heroContainer {
-    margin: 0rem auto;
-    width: 100%;
-    height: 550px;
-}
-
-.heroContainer img {
-    width: 100%;
-    max-width: 1500px;
+.mainImg{
+    width: 100% !important;
     height: 550px;
     object-fit: cover;
-    position: absolute;
-}
-
-.imgcarousel {
-    position: absolute;
-
-
 }
 
 .mainHeading {
-    position: relative;
     font-family: 'Lobster Two', cursive;
-    width: fit-content;
     color: #FFFF4E;
-    text-shadow: -2px -2px 1px black;
+    text-shadow: -5px -5px 10px black;
     font-size: 7rem;
     font-weight: 800;
-    position: relative;
-    top: 2rem;
-    left: 2rem;
+    text-align: center;
 }
 
 .subHeading {
     font-family: 'Lobster Two', cursive;
-    width: 600px;
     padding: 0.5rem 1rem;
     color: black;
     font-size: 3rem;
     background-color: #ffffff;
-    text-decoration: underline;
-    position: relative;
-    top: 2rem;
-    left: 2rem;
+    text-align: center;
 }
 
 
@@ -51,31 +29,22 @@
         font-size: 8px;
     }
 
-    .heroContainer {
-        height: 520px;
-    }
-
-    .heroContainer img {
-        height: 520px;
+    .mainImg{
+        height: 520px !important;
     }
 
     .mainHeading {
-        top: 26rem;
-        left: 2rem;
         color: #000000;
-        text-shadow: none;
-        background-color: white;
-        padding: 0rem 0.5rem;
-        font-size: 4rem;
+        text-shadow: 1px 1px 5px rgb(255, 255, 255);
+        /* background-color: white; */
+        font-size: 5rem;
     }
 
     .subHeading {
-        width: 90%;
+        width: 100%;
         padding: 0.5rem 1rem;
         color: rgb(255, 255, 255);
         background-color: #000000;
-        top: 26rem;
-        left: 2rem;
     }
 }
 
@@ -84,31 +53,17 @@
         font-size: 5px;
     }
 
-    .heroContainer {
-        height: 480px;
-    }
-
-    .heroContainer img {
-        height: 480px;
+    .mainImg{
+        height: 480px !important;
     }
 
     .mainHeading {
-        top: 45rem;
-        left: 2rem;
         color: #000000;
-        text-shadow: none;
-        background-color: white;
         padding: 0rem 0.5rem;
-        font-size: 5rem;
+        font-size: 6rem;
     }
 
     .subHeading {
-        width: 90%;
-        padding: 0.5rem 1rem;
-        color: rgb(255, 255, 255);
-        background-color: #000000;
-        top: 45rem;
-        left: 2rem;
         font-size: 3.5rem;
     }
 }

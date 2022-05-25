@@ -19,7 +19,6 @@
     min-width: 300px;
     cursor: pointer;
     border: 1px solid rgb(32, 32, 32);
-    transition: all 1s;
 }
 .blogCard:hover{
     filter: brightness(80%);

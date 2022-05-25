@@ -1,17 +1,24 @@
 .nav {
     /* background-color: black; */
-    background-color: white;
+    /* background-color: white; */
     padding: 0.5rem;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     position: sticky;
     top: 0;
-    /* background: white; */
-    border-bottom: solid 1px gray;
-
-
-
+    z-index: 1;
+    font-family: 'Mulish', sans-serif;
+    font-family: 'Roboto Slab', serif;
+    /* background-color: transparent; */
+    border-bottom: 1px solid hsla(0, 0%, 100%, .25);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;600;800&family=Roboto+Slab:wght@300&display=swap');
 
 .nav p {
     font-size: 1rem;
@@ -24,24 +31,13 @@
 }
 
 .name h1 {
-    font-size: 4rem;
-    background: #000000;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #434343, #000000);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #434343, #000000);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
+    font-size: 3rem;
+    font-weight: 300;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    font-family: Poppins, sans-serif;
+    color: #000;
+    margin: 1.6rem;
 }
 
 .name img {
@@ -52,6 +48,8 @@
 .name a {
     text-decoration: none;
     color: black;
+    font-family: 'Mulish', sans-serif;
+    font-family: 'Roboto Slab', serif;
 }
 
 .link {
@@ -65,8 +63,18 @@
 .link a {
     text-decoration: none;
     color: black;
-    margin-right: 1rem;
+    padding: 15px 20px;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    font-family: Poppins, sans-serif;
+    color: #000;
 
-    /* background-color: red; */
 
+}
+
+.search {
+    margin-top: 2rem;
 }

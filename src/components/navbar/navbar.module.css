@@ -1,11 +1,24 @@
 .nav {
     /* background-color: black; */
+    /* background-color: white; */
     padding: 0.5rem;
     display: flex;
-    justify-content: space-around;
-    /* border: solid; */
-    background: white;
+    justify-content: space-evenly;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    font-family: 'Mulish', sans-serif;
+    font-family: 'Roboto Slab', serif;
+    /* background-color: transparent; */
+    border-bottom: 1px solid hsla(0, 0%, 100%, .25);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;600;800&family=Roboto+Slab:wght@300&display=swap');
 
 .nav p {
     font-size: 1rem;
@@ -17,6 +30,16 @@
 
 }
 
+.name h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    font-family: Poppins, sans-serif;
+    color: #000;
+    margin: 1.6rem;
+}
+
 .name img {
     width: 11rem;
     height: 5rem;
@@ -25,6 +48,8 @@
 .name a {
     text-decoration: none;
     color: black;
+    font-family: 'Mulish', sans-serif;
+    font-family: 'Roboto Slab', serif;
 }
 
 .link {
@@ -38,8 +63,18 @@
 .link a {
     text-decoration: none;
     color: black;
-    margin-right: 1rem;
+    padding: 15px 20px;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    font-family: Poppins, sans-serif;
+    color: #000;
 
-    /* background-color: red; */
 
+}
+
+.search {
+    margin-top: 2rem;
 }

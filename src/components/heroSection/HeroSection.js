@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./heroSection.module.css";
 
-function HeroSection({ imgSrc, heading, subHeading }) {
+function HeroSection({ imgSrc }) {
   return (
     <div>
       <div
@@ -27,20 +27,26 @@ function HeroSection({ imgSrc, heading, subHeading }) {
             />
 
             <div className="carousel-caption d-md-block">
-              <h1 className={styles.mainHeading}>{heading}</h1>
-              <p className={styles.subHeading}>{subHeading}</p>
+              <h1 className={styles.mainHeading}>
+                {"Demon Slayer Season 3 is here"}
+              </h1>
+              <p className={styles.subHeading}>
+                {
+                  "When Demon Slayer season 3 comes out, based on everything we know"
+                }
+              </p>
             </div>
           </div>
           <div className="carousel-item">
             <img
               className={`d-block w-100 ${styles.mainImg}`}
               src={
-                "https://cdn.thewirecutter.com/wp-content/media/2020/12/macbook-2048px-8.jpg?auto=webp&quality=75&width=1024"
+                "https://9to5mac.com/wp-content/uploads/sites/6/2019/03/Apple-event.jpg?quality=82&strip=all"
               }
               alt="Second slide"
             />
             <div className="carousel-caption d-md-block">
-              <h1 className={styles.mainHeading}>{"new macbook pro"}</h1>
+              <h1 className={styles.mainHeading}>{"Apple event 2022"}</h1>
               <p className={styles.subHeading}>
                 {
                   "latest mac release, find what apple brings in their upcoming event 2022"
@@ -51,9 +57,7 @@ function HeroSection({ imgSrc, heading, subHeading }) {
           <div className="carousel-item">
             <img
               className={`d-block w-100 ${styles.mainImg}`}
-              src={
-                "https://static3.srcdn.com/wordpress/wp-content/uploads/2022/04/Thor-4-Header.jpg"
-              }
+              src={"https://images4.alphacoders.com/108/thumb-1920-1080699.jpg"}
               alt="Third slide"
             />
             <div className="carousel-caption d-md-block">

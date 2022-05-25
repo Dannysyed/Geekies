@@ -6,11 +6,7 @@ import BlogRows from "../../components/blogRows/BlogRows";
 let Homepage = () => {
   return (
     <div className={styles.home}>
-      <HeroSection
-        imgSrc={myImage}
-        heading="Demon Slayer Season 3"
-        subHeading="When Demon Slayer season 3 comes out, based on everything we know"
-      />
+      <HeroSection imgSrc={myImage} />
       <BlogRows />
     </div>
   );

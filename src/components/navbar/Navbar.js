@@ -1,21 +1,17 @@
 import styles from "./navbar.module.css";
 import { NavLink } from "react-router-dom";
-import { Card, Input } from "@mui/material";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Card } from "@mui/material";
 
-import * as React from 'react';
-import { styled } from '@mui/material/styles';
-import Button from '@mui/material/Button';
-import IconButton from '@mui/material/IconButton';
-import PhotoCamera from '@mui/icons-material/PhotoCamera';
-import Stack from '@mui/material/Stack';
+import * as React from "react";
+import { styled } from "@mui/material/styles";
+import Button from "@mui/material/Button";
+import IconButton from "@mui/material/IconButton";
+// import PhotoCamera from "@mui/icons-material/PhotoCamera";
+import Stack from "@mui/material/Stack";
 
 let Navbar = () => {
-  const Input = styled('input')({
-    display: 'none',
-  });
   return (
-    <Card elevation={8} className={styles.nav}>
+    <Card component="nav" elevation={8} className={styles.nav}>
       <div className={styles.name}>
         <NavLink to={"/homepage"}>
           <h1>Geekies</h1>
@@ -29,20 +25,14 @@ let Navbar = () => {
         <NavLink to={"/Games"}>CONTACT US</NavLink>
       </div>
       <div className={styles.search}>
-        <div className="input-group rounded">
-          {/* <input type="search" className="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
-          <span className="input-group-text border-0" id="search-addon">
-            <i class="fa fa-search" aria-hidden="true"></i>
-          </span> */}
-          <Stack direction="row" alignItems="center" spacing={2}>
-            <label htmlFor="contained-button-file">
-              <Input accept="image/*" id="contained-button-file" multiple type="file" />
-              <Button variant="contained" component="span" style={{ backgroundColor: 'black' }}>
-                Add post
-                <PhotoCamera style={{ marginLeft: '8px' }} />
-              </Button>
-            </label>
-          </Stack>
+        <div className="">
+          <Button
+            variant="contained"
+            size="large"
+            style={{ backgroundColor: "black", fontSize: "1.3rem" }}
+          >
+            Add post
+          </Button>
         </div>
       </div>
     </Card>

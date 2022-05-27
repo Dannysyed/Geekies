@@ -1,80 +1,81 @@
-.nav {
-    /* background-color: black; */
-    /* background-color: white; */
-    padding: 0.5rem;
-    display: flex;
-    justify-content: space-evenly;
-    position: sticky;
-    top: 0;
-    z-index: 1;
-    font-family: 'Mulish', sans-serif;
-    font-family: 'Roboto Slab', serif;
-    /* background-color: transparent; */
-    border-bottom: 1px solid hsla(0, 0%, 100%, .25);
-    position: fixed;
-    top: 0;
-    left: 0;
+nav{
     width: 100%;
-    z-index: 9999;
-}
-
-@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;600;800&family=Roboto+Slab:wght@300&display=swap');
-
-.nav p {
-    font-size: 1rem;
-}
-
-.name {
-    font-size: 2rem;
+    height: 60px;
+    background-color: rgb(255, 255, 255);
     display: flex;
-
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
-
-.name h1 {
+.logoBox{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logoBox h2{
     font-size: 3rem;
     font-weight: 600;
-    letter-spacing: .1em;
-    text-transform: uppercase;
-    font-family: Poppins, sans-serif;
-    color: #000;
-    margin: 1.6rem;
 }
-
-.name img {
-    width: 11rem;
-    height: 5rem;
+.navLinks{
+    flex: 3;
 }
-
-.name a {
-    text-decoration: none;
-    color: black;
-    font-family: 'Mulish', sans-serif;
-    font-family: 'Roboto Slab', serif;
-}
-
-.link {
-    font-size: 2rem;
-
+.navLinks ul{
+    height: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
     display: flex;
-    margin-top: 1rem;
-
+    justify-content: space-around;
+}
+.navLinks li{
+    align-self: center;
+    font-size: 1.7rem;
+    cursor: pointer;
+}
+.others{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.addPost{
+    font-size: 1.4rem !important;
+    background-color: black !important;
+    border-radius: 20px !important;
 }
 
-.link a {
-    text-decoration: none;
-    color: black;
-    padding: 15px 20px;
-    font-size: 13px;
-    font-weight: 400;
-    line-height: 20px;
-    letter-spacing: .1em;
-    text-transform: uppercase;
-    font-family: Poppins, sans-serif;
-    color: #000;
-
-
+@media all and (max-width: 920px){
+    .navLinks{
+        flex: 1;
+        visibility: hidden;
+    }
+    .logoBox{
+        flex: 2;
+    }
+    .others{
+        flex: 2;
+    }
 }
 
-.search {
-    margin-top: 2rem;
+@media all and (max-width: 480px){
+    nav{
+        height: 50px;
+    }
+    .navLinks{
+        flex: 3;
+        visibility: hidden;
+    }
+    .logoBox{
+        flex: 2;
+        padding-left: 3rem;
+    }
+    .others{
+        flex: 2;
+    }
+    .logoBox h2{
+        font-size: 4rem;
+        font-weight: 600;
+    }
 }

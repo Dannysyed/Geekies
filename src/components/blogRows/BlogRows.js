@@ -7,15 +7,15 @@ import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 
-function BlogRows() {
+function BlogRows({ sectionName, colorTheme, textColor }) {
   return (
     <div className={styles.container}>
-      <h2 className={styles.heading}>Top Trending</h2>
+      <h2 className={styles.heading}>{sectionName}</h2>
       <div className={styles.blogsContainer}>
-        {[1, 2, 3, 4, 5, 6, 7, 8].map((item) => (
+        {[1, 2, 3].map((item) => (
           <Card
             className={styles.blogCard}
-            sx={{ maxWidth: 345 }}
+            sx={{ maxWidth: 345, borderColor: colorTheme }}
             elevation="0"
           >
             <CardMedia
@@ -24,8 +24,11 @@ function BlogRows() {
               image="https://ichef.bbci.co.uk/news/976/cpsprodpb/15E47/production/_124717698_gettyimages-1395200655.jpg"
               alt="green iguana"
             />
-            <CardContent className={styles.cardContent}>
-              <p className={styles.blogTitle}>
+            <CardContent
+              style={{ backgroundColor: colorTheme }}
+              className={styles.cardContent}
+            >
+              <p className={styles.blogTitle} style={{ color: textColor }}>
                 SpaceX president backs Elon Musk over sex misconduct claims: ‘I
                 believe the allegations to be false’
               </p>

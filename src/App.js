@@ -8,6 +8,7 @@ import Technology from "./pages/Technology/Technology";
 function App() {
   return (
     <div className="App">
+      {/* <Navbar /> */}
       <Navbar />
       <Homepage />
       <Switch>

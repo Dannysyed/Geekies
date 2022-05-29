@@ -20,7 +20,7 @@ function SectionPage() {
       </div>
       <BlogRows
         sectionName="All glamour here"
-        colorTheme="#f4b6c2"
+        colorTheme="#ffd3b6"
         textColor="#000000"
         cards={[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]}
       />

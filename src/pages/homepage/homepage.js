@@ -10,6 +10,7 @@ let Homepage = () => {
       <BlogRows
         sectionName="Trending today"
         colorTheme="#ff0000"
+        textColor="#ffffff"
         cards={[1, 2, 3]}
       />
       <BlogRows

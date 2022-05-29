@@ -1,11 +1,11 @@
 import React from "react";
 import styles from "./blogRows.module.css";
 import Card from "@mui/material/Card";
-import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
-import Button from "@mui/material/Button";
-import Typography from "@mui/material/Typography";
+import Chip from "@mui/material/Chip";
+import BookIcon from "@mui/icons-material/Book";
+import FaceIcon from "@mui/icons-material/Face";
 
 function BlogRows({ sectionName, colorTheme, textColor, cards }) {
   return (
@@ -32,6 +32,22 @@ function BlogRows({ sectionName, colorTheme, textColor, cards }) {
                 SpaceX president backs Elon Musk over sex misconduct claims: ‘I
                 believe the allegations to be false’
               </p>
+              <div className={styles.blogDetail}>
+                <Chip
+                  className={styles.category}
+                  style={{ color: textColor }}
+                  icon={
+                    <BookIcon
+                      className={styles.categoryIcon}
+                      style={{ color: textColor }}
+                    />
+                  }
+                  label="Technology"
+                />
+                <span className={styles.blogViews} style={{ color: textColor }}>
+                  1023 <FaceIcon className={styles.blogViewsIcon} />
+                </span>
+              </div>
             </CardContent>
           </Card>
         ))}

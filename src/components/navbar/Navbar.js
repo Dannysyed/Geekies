@@ -4,6 +4,7 @@ import styles from "./navbar.module.css";
 import CreateIcon from "@mui/icons-material/Create";
 import useWindowDimensions from "../../hooks/useWindowDimensions";
 import MyDrawer from "../drawer/MyDrawer";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   const { width, height } = useWindowDimensions();
@@ -11,7 +12,11 @@ function Navbar() {
   return (
     <nav>
       <div className={styles.logoBox}>
-        <h2>Geekies</h2>
+        <h2>
+          <Link className={styles.reactRouterLink} to="/">
+            Geekies
+          </Link>
+        </h2>
       </div>
       <div className={styles.navLinks}>
         <ul>

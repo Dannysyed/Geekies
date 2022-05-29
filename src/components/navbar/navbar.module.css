@@ -45,6 +45,13 @@ nav{
     background-color: black !important;
     border-radius: 20px !important;
 }
+.reactRouterLink{
+    color: black;
+}
+.reactRouterLink:hover{
+    text-decoration: none;
+    color: black;
+}
 
 @media all and (max-width: 920px){
     .navLinks{

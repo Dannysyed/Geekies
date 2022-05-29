@@ -7,12 +7,12 @@ import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 
-function BlogRows({ sectionName, colorTheme, textColor }) {
+function BlogRows({ sectionName, colorTheme, textColor, cards }) {
   return (
     <div className={styles.container}>
       <h2 className={styles.heading}>{sectionName}</h2>
       <div className={styles.blogsContainer}>
-        {[1, 2, 3].map((item) => (
+        {cards.map((item) => (
           <Card
             className={styles.blogCard}
             sx={{ maxWidth: 345, borderColor: colorTheme }}

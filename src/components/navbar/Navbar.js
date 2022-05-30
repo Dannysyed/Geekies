@@ -3,7 +3,8 @@ import React from "react";
 import styles from "./navbar.module.css";
 import CreateIcon from "@mui/icons-material/Create";
 import useWindowDimensions from "../../hooks/useWindowDimensions";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
+import MyDrawer from "../drawer/MyDrawer";
 
 // import { NavLink } from "react-router-dom/cjs/react-router-dom.min";
 
@@ -43,6 +44,7 @@ function Navbar() {
           </Button>
         ) : (
           <MyDrawer />
+
         )}
       </div>
     </nav>

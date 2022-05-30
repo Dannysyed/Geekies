@@ -1,24 +1,19 @@
 import "./App.css";
 import Navbar from "./components/navbar/Navbar";
-import Homepage from "./pages/homepage/HomePage";
-import { Switch, Route } from "react-router-dom";
-import Anime from "./pages/Anime/Anime";
-import Technology from "./pages/Technology/Technology";
+import HomePage from "./pages/homepage/HomePage";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import SectionPage from "./pages/sectionPage/SectionPage";
 
 function App() {
   return (
     <div className="App">
-      {/* <Navbar /> */}
-      <Navbar />
-      <Homepage />
-      <Switch>
-        <Route path={"/Anime"}>
-          <Anime />
-        </Route>
-        <Route path={"/Technology"}>
-          <Technology />
-        </Route>
-      </Switch>
+      <BrowserRouter>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/section" element={<SectionPage />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }

@@ -1,18 +1,18 @@
 import React from "react";
 import styles from "./blogRows.module.css";
 import Card from "@mui/material/Card";
-import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
-import Button from "@mui/material/Button";
-import Typography from "@mui/material/Typography";
+import Chip from "@mui/material/Chip";
+import BookIcon from "@mui/icons-material/Book";
+import FaceIcon from "@mui/icons-material/Face";
 
-function BlogRows({ sectionName, colorTheme, textColor }) {
+function BlogRows({ sectionName, colorTheme, textColor, cards }) {
   return (
     <div className={styles.container}>
       <h2 className={styles.heading}>{sectionName}</h2>
       <div className={styles.blogsContainer}>
-        {[1, 2, 3].map((item) => (
+        {cards.map((item) => (
           <Card
             className={styles.blogCard}
             sx={{ maxWidth: 345, borderColor: colorTheme }}
@@ -32,6 +32,22 @@ function BlogRows({ sectionName, colorTheme, textColor }) {
                 SpaceX president backs Elon Musk over sex misconduct claims: ‘I
                 believe the allegations to be false’
               </p>
+              <div className={styles.blogDetail}>
+                <Chip
+                  className={styles.category}
+                  style={{ color: textColor }}
+                  icon={
+                    <BookIcon
+                      className={styles.categoryIcon}
+                      style={{ color: textColor }}
+                    />
+                  }
+                  label="Technology"
+                />
+                <span className={styles.blogViews} style={{ color: textColor }}>
+                  1023 <FaceIcon className={styles.blogViewsIcon} />
+                </span>
+              </div>
             </CardContent>
           </Card>
         ))}

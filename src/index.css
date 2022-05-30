@@ -15,7 +15,7 @@ body {
   margin: 0 auto;
   padding: 0;
   max-width: 1500px;
-  background-image: linear-gradient(to top, #fff1eb 0%, #ffffff 100%);
+  /* background-image: linear-gradient(to top, #fff1eb 0%, #ffffff 100%); */
 }
 
 code {

@@ -1,4 +1,4 @@
-nav{
+nav {
     width: 100%;
     height: 60px;
     background-color: rgb(255, 255, 255);
@@ -7,21 +7,26 @@ nav{
     top: 0px;
     z-index: 100;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+
 }
-.logoBox{
+
+.logoBox {
     flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.logoBox h2{
+
+.logoBox h2 {
     font-size: 3rem;
     font-weight: 600;
 }
-.navLinks{
-    flex: 3;
+
+.navLinks {
+    flex: 1.5;
 }
-.navLinks ul{
+
+.navLinks ul {
     height: 100%;
     list-style: none;
     margin: 0;
@@ -29,52 +34,70 @@ nav{
     display: flex;
     justify-content: space-around;
 }
-.navLinks li{
+
+.navLinks li {
     align-self: center;
-    font-size: 1.7rem;
+    font-size: 1.4rem;
+    font-weight: 500;
     cursor: pointer;
+    text-decoration: none;
+    text-transform: uppercase;
+
 }
-.others{
+
+.navLinks a {
+    text-decoration: none;
+    color: black
+}
+
+.others {
     flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.addPost{
+
+.addPost {
     font-size: 1.4rem !important;
     background-color: black !important;
-    border-radius: 20px !important;
+    border-radius: 16px !important;
 }
 
-@media all and (max-width: 920px){
-    .navLinks{
+@media all and (max-width: 1200px) {
+    .navLinks {
         flex: 1;
         visibility: hidden;
     }
-    .logoBox{
+
+    .logoBox {
         flex: 2;
     }
-    .others{
+
+    .others {
         flex: 2;
     }
 }
 
-@media all and (max-width: 480px){
-    nav{
+@media all and (max-width: 480px) {
+    nav {
         height: 50px;
     }
-    .navLinks{
+
+    .navLinks {
         flex: 3;
         visibility: hidden;
     }
-    .logoBox{
+
+    .logoBox {
         flex: 2;
         padding-left: 3rem;
     }
-    .others{
+
+    .others {
         flex: 2;
     }
-    .logoBox h2{
+
+    .logoBox h2 {
         font-size: 4rem;
         font-weight: 600;
     }

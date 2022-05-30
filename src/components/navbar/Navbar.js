@@ -4,6 +4,8 @@ import styles from "./navbar.module.css";
 import CreateIcon from "@mui/icons-material/Create";
 import useWindowDimensions from "../../hooks/useWindowDimensions";
 import MyDrawer from "../drawer/MyDrawer";
+// import { NavLink } from "react-router-dom/cjs/react-router-dom.min";
+import { NavLink } from 'react-router-dom'
 
 function Navbar() {
   const { width, height } = useWindowDimensions();
@@ -15,7 +17,10 @@ function Navbar() {
       </div>
       <div className={styles.navLinks}>
         <ul>
-          <li>Technology</li>
+          <li><NavLink to={'/tech'}>
+            Technology
+          </NavLink>
+          </li>
           <li>Anime</li>
           <li>Controversy</li>
           <li>Celebs</li>
@@ -23,14 +28,14 @@ function Navbar() {
         </ul>
       </div>
       <div className={styles.others}>
-        {width > 920 ? (
+        {width > 1200 ? (
           <Button
             endIcon={<CreateIcon />}
             variant="contained"
             className={styles.addPost}
             disableElevation
           >
-            Add post
+            Add Blog
           </Button>
         ) : (
           <MyDrawer />

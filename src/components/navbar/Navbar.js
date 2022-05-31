@@ -3,7 +3,7 @@ import React from "react";
 import styles from "./navbar.module.css";
 import CreateIcon from "@mui/icons-material/Create";
 import useWindowDimensions from "../../hooks/useWindowDimensions";
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import MyDrawer from "../drawer/MyDrawer";
 
 // import { NavLink } from "react-router-dom/cjs/react-router-dom.min";
@@ -22,14 +22,21 @@ function Navbar() {
       </div>
       <div className={styles.navLinks}>
         <ul>
-          <li><NavLink to={'/tech'}>
-            Technology
-          </NavLink>
+          <li>
+            <Link to={"/section/technology"}>Technology</Link>
           </li>
-          <li>Anime</li>
-          <li>Controversy</li>
-          <li>Celebs</li>
-          <li>Productivity</li>
+          <li>
+            <Link to={"/section/anime"}>Anime</Link>
+          </li>
+          <li>
+            <Link to={"/section/controversy"}>Controversy</Link>
+          </li>
+          <li>
+            <Link to={"/section/celebs"}>Celebs</Link>
+          </li>
+          <li>
+            <Link to={"/section/productivity"}>Productivity</Link>
+          </li>
         </ul>
       </div>
       <div className={styles.others}>
@@ -44,7 +51,6 @@ function Navbar() {
           </Button>
         ) : (
           <MyDrawer />
-
         )}
       </div>
     </nav>

@@ -12,8 +12,13 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/section" element={<SectionPage />} />
+          <Route path="/section/technology" element={<SectionPage />} />
+          <Route path="/section/anime" element={<SectionPage />} />
+          <Route path="/section/controversy" element={<SectionPage />} />
+          <Route path="/section/celebs" element={<SectionPage />} />
+          <Route path="/section/productivity" element={<SectionPage />} />
           <Route path="/blog" element={<BlogPage />} />
+          <Route path="*" element={<HomePage />} />
         </Routes>
       </BrowserRouter>
     </div>

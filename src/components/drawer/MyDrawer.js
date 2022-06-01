@@ -6,6 +6,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import styles from "./myDrawer.module.css";
 import { Button } from "@mui/material";
 import CreateIcon from "@mui/icons-material/Create";
+import { Link } from "react-router-dom";
 
 export default function MyDrawer() {
   const [state, setState] = React.useState({
@@ -34,11 +35,21 @@ export default function MyDrawer() {
       onKeyDown={toggleDrawer(anchor, false)}
     >
       <ul className={styles.navLinks}>
-        <li>Technology</li>
-        <li>Anime</li>
-        <li>Controversy</li>
-        <li>Celebs</li>
-        <li>Productivity</li>
+        <li>
+          <Link to={"/section/technology"}>Technology</Link>
+        </li>
+        <li>
+          <Link to={"/section/anime"}>Anime</Link>
+        </li>
+        <li>
+          <Link to={"/section/controversy"}>Controversy</Link>
+        </li>
+        <li>
+          <Link to={"/section/celebs"}>Celebs</Link>
+        </li>
+        <li>
+          <Link to={"/section/productivity"}>Productivity</Link>
+        </li>
       </ul>
       <Divider />
       <Button

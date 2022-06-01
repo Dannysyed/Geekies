@@ -24,6 +24,13 @@
     margin-top: 2rem !important;
     font-size: 1.3rem !important;
 }
+a{
+    color: black;
+}
+a:hover{
+    text-decoration: none;
+    color: black;
+}
 
 @media all and (max-width: 480px){
     .navLinks{

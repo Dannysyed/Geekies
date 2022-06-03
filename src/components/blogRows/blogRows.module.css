@@ -57,6 +57,11 @@
     .heading{
         font-size: 4rem;
     }
+    .blogCard{
+        min-width: 80%;
+        cursor: pointer;
+        transition: all 1s;
+    }
     .blogTitle{
         font-size: 2rem;
     }

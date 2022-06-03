@@ -10,10 +10,12 @@ function SectionPage({ imgSrc, title, subtitle }) {
       </div>
       <div className={styles.headerText}>
         <h2>{title}</h2>
-        <p>{subtitle}</p>
+        <p>
+          {subtitle.length > 200 ? subtitle.slice(0, 201) + "..." : subtitle}
+        </p>
       </div>
       <BlogRows
-        sectionName="All glamour here"
+        sectionName=""
         colorTheme="#ffd3b6"
         textColor="#000000"
         cards={[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]}

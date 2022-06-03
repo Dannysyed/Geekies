@@ -1,10 +1,9 @@
 const sectionResources = [
   {
-    img: "https://www.xda-developers.com/files/2019/10/Microsoft-ARM-powered-Surface_1_1.jpg",
-    title:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis recusandae",
+    img: "https://www.simplilearn.com/ice9/free_resources_article_thumb/AWS_careers.jpg",
+    title: "Getting started with Amazon Web Services (AWS)",
     subtitle:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima rem beatae voluptatem hic laudantium ipsam magni eveniet aliquid voluptates cupiditate!",
+      "This article is for anyone interested in learning more about Amazon Web Services (AWS). I’ve tried to keep things relevant to people with a wide range of roles. This includes Software developers, testers, technical sales and others.",
   },
   {
     img: "https://www.cartoonbrew.com/wp-content/uploads/2022/04/suzumenotojimari-1280x600.jpg",
@@ -14,25 +13,25 @@ const sectionResources = [
       "The latest anime film from renowned director Makoto Shinkai, Suzume no Tojimari, has been picked up for distribution outside of Asia in early 2023",
   },
   {
-    img: "https://miro.medium.com/max/1000/1*KDMx1YspSrBcFJG-NDZgDg.png",
+    img: "https://phantom-marca.unidadeditorial.es/5fa6060c9ba752f43c8b2660665269e3/resize/1320/f/jpg/assets/multimedia/imagenes/2022/05/28/16537546138511.jpg",
     title:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis recusandae",
+      "Elon Musk's message about Amber Heard and Johnny Depp after the end of the trial",
     subtitle:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima rem beatae voluptatem hic laudantium ipsam magni eveniet aliquid voluptates cupiditate!",
+      "Although no one expected him to speak out about the legal fight between Depp and Heard, the billionaire entrepreneur has broken his silence and decided to share his point of view, as well as his personal wish, about the problems between the ex-marriage of actors.",
   },
   {
     img: "https://www.rollingstone.com/wp-content/uploads/2022/05/met-gala-blake-and-ryan.jpg?w=1024",
     title:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis recusandae",
+      "Blake Lively Transforms Her Met Gala 2022 Dress, Poses With Husband Ryan Reynolds Before Cohosting Gig",
     subtitle:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima rem beatae voluptatem hic laudantium ipsam magni eveniet aliquid voluptates cupiditate!",
+      "The couple that cohosts together, stays together. Blake Lively and Ryan Reynolds were all smiles at the 2022 Met Gala before turning on the charm as the event’s co-chairs.",
   },
   {
-    img: "https://miro.medium.com/max/1000/1*KDMx1YspSrBcFJG-NDZgDg.png",
+    img: "https://www.notion.vip/wp-content/uploads/notion_api.jpg",
     title:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis recusandae",
+      "Notion’s powerful note-taking app is now free for students and teachers",
     subtitle:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima rem beatae voluptatem hic laudantium ipsam magni eveniet aliquid voluptates cupiditate!",
+      "Notion, the sleek and sophisticated note-taking app, is going free for the education market. The company said today that teachers and students who sign up with an academic email address will get a free upgrade to the premium version of the software, which entitles them to unlimited uploads, storage, and version history features.",
   },
 ];
 

@@ -53,6 +53,14 @@
     margin-left: 0.2rem !important;
 }
 
+@media all and (max-width: 1000px){
+    .blogCard{
+        min-width: 500px;
+        cursor: pointer;
+        transition: all 1s;
+    }
+}
+
 @media all and (max-width: 720px){
     .heading{
         font-size: 4rem;
